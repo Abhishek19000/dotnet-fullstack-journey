@@ -1,7 +1,7 @@
 ﻿int a = 10;
 int b = a;
 
-b = 20;
+a = 50;
 
 Console.WriteLine($"a = {a}");
 Console.WriteLine($"b = {b}");
