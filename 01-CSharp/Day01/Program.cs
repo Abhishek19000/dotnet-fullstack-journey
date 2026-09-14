@@ -1,15 +1,10 @@
-﻿Person p1= new Person();
+﻿int number = 10;
 
-p1.Name="Abhishek";
+object obj = number;
 
-Person p2 = p1;
+Console.WriteLine(obj);
+Console.WriteLine(obj.GetType());
 
-p2.Name="Rahul";
+int result = (int)obj;
 
-Console.WriteLine($"p1.Name = {p1.Name}");
-Console.WriteLine($"p2.Name = {p2.Name}");
-
-class Person
-{
-       public string? Name {get;set;}
-}
+Console.WriteLine(result);
