@@ -1,7 +1,15 @@
-﻿int a = 10;
-int b = a;
+﻿Person p1= new Person();
 
-a = 50;
+p1.Name="Abhishek";
 
-Console.WriteLine($"a = {a}");
-Console.WriteLine($"b = {b}");
+Person p2 = p1;
+
+p2.Name="Rahul";
+
+Console.WriteLine($"p1.Name = {p1.Name}");
+Console.WriteLine($"p2.Name = {p2.Name}");
+
+class Person
+{
+       public string? Name {get;set;}
+}
